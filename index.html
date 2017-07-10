@@ -1,0 +1,48 @@
+<html>
+<head>
+
+  <title> jQuery Slider </title>
+
+  <link rel='stylesheet' href='css/style.css'>
+
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <script type='text/javascript'>
+  function Slider() {
+    $('.slider #1').show('fade', 500)
+  }
+  window.onload = function() {
+      if (window.jQuery) {
+          // jQuery is loaded
+          alert("Yeah!");
+      } else {
+          // jQuery is not loaded
+          alert("Doesn't Work");
+      }
+  }
+
+
+  </script>
+
+</head>
+
+
+<body onload='Slider();'>
+<div class="wrapper">
+
+  <div id="slider">
+<img id='1' src='images/image1.jpg'>
+<img id='2' src='images/image2.jpg'>
+<img id='3' src='images/image3.jpg'>
+<img id='4' src='images/image4.jpg'>
+  </div>
+
+  <a href='#' class='left'>Previous</a>
+  <a href='#' class='right'>Next</a>
+
+  </div>
+</body>
+
+</html>
